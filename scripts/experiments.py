@@ -59,6 +59,6 @@ if __name__ == "__main__":
                 b = pd.DataFrame(np.array(b), columns=['v'])
                 out = pd.concat([a, b], axis=1)
                 if i:
-                    out.to_csv("../data/" + picture + "/windowed_ " + alg + ".csv", ',', index=False)
+                    out.to_csv("../data/" + picture + "/windowed_" + alg + ".csv", ',', index=False)
                 else:
                     out.to_csv("../data/" + picture + "/" + alg + ".csv", ',', index=False)
